@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { ArrowLeft, ArrowRight } from "lucide-react"; // Removed ExternalLink and Github
-
-// The project data remains the same. Only the links will be ignored by the new code.
+import { ArrowLeft, ArrowRight } from "lucide-react"; 
 const projects = [
   {
     id: 1,
@@ -69,7 +67,7 @@ export const ProjectsSection = () => {
 
   return (
     <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl"> {/* NOTE: Main container for content */}
+      <div className="container mx-auto max-w-5xl"> 
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
         </h2>
@@ -77,12 +75,10 @@ export const ProjectsSection = () => {
           Here are some of my recent projects. Each project was carefully crafted with attention to detail, performance and user experience to solve real-world problems and showcase my skills in the field of AI
         </p>
 
-        {/* --- MAIN CAROUSEL CONTAINER --- */}
         <div 
           className="relative"
           onMouseEnter={resetTimeout}
         >
-          {/* --- PART 1: IMAGE CAROUSEL --- */}
           <div className="overflow-hidden rounded-lg shadow-lg bg-card/50 h-96">
             <div
               className="flex transition-transform ease-out duration-500 h-full"
@@ -100,7 +96,6 @@ export const ProjectsSection = () => {
             </div>
           </div>
 
-          {/* --- PART 2: DETAILS CAROUSEL (SYNCHRONIZED) --- */}
           <div className="overflow-hidden mt-8">
             <div
               className="flex transition-transform ease-out duration-500"
@@ -119,14 +114,10 @@ export const ProjectsSection = () => {
                   <p className="text-muted-foreground text-sm max-w-xl mx-auto mb-6">
                     {project.description}
                   </p>
-                  {/* --- CHANGE: The individual project links have been removed as requested --- */}
                 </div>
               ))}
             </div>
           </div>
-
-          {/* --- NAVIGATION ARROWS (POSITIONED OUTSIDE) --- */}
-          {/* --- CHANGE: Arrows moved further out using -left-20 and -right-20 --- */}
           <button
             onClick={goToPrevious}
             className="absolute top-1/2 -translate-y-1/2 -left-20 z-10 p-2 bg-card/50 rounded-full hover:bg-card transition-colors hidden md:block"
