@@ -23,7 +23,6 @@ import {
 } from "lucide-react";
 
 const qualifications = [
-  // Technical Skills
   { name: "Generative & Agentic AI", level: 95, category: "technical", format: "bar" },
   { name: "Machine Learning & Deep Learning", level: 95, category: "technical", format: "bar" },
   { name: "LLM Orchestration & Fine-Tuning", level: 90, category: "technical", format: "bar" },
@@ -33,8 +32,6 @@ const qualifications = [
   { name: "Software Engineering", level: 80, category: "technical", format: "bar" },
   { name: "Data Structures & Algorithms", level: 85, category: "technical", format: "bar" },
   { name: "Database Management (DBMS)", level: 80, category: "technical", format: "bar" },
-
-  // Core Competencies
   {
     name: "Problem Solving",
     Icon: Lightbulb,
@@ -99,8 +96,6 @@ const qualifications = [
     format: "card",
   },
   
-  // --- CERTIFICATIONS UPDATED WITH LINKS ---
-  // The 'link' property has been added to each certification.
   { name: "Artificial Intelligence: CS50", provider: "Harvard University", Icon: Verified, category: "certifications", format: "list", link: "https://drive.google.com/file/d/1ym9CHVsQCE5CtfqJKpQnFKepws4gHHWL/view" },
   { name: "Machine Learning", provider: "Stanford University (Coursera)", Icon: BrainCircuit, category: "certifications", format: "list", link: "https://drive.google.com/file/d/1Qp4E17kBXgrqiI_ru4qTRjVSITebuX-C/view" },
   { name: "Supervised Machine Learning", provider: "DeepLearning.AI", Icon: BrainCircuit, category: "certifications", format: "list", link: "https://drive.google.com/file/d/1s4-YIFbNo_Dm6XAFqHonrvjFk26lisGI/view" },
@@ -111,7 +106,6 @@ const qualifications = [
   { name: "Software Engineering Virtual Experience", provider: "JP Morgan Chase (Forage)", Icon: Briefcase, category: "certifications", format: "list", link: "https://drive.google.com/file/d/1yd39zfRnm_mIgIwrvfl34qsRWCATftGt/view" },
   { name: "Data Science, ML, DL & NLP", provider: "Udemy", Icon: BookOpen, category: "certifications", format: "list", link: "https://drive.google.com/file/d/1dnfZR-3oQzYXOTinwnj2o1GrF6EEe5i9/view" },
 
-  // Achievements
   {
     name: "Best Paper Award: AITA 2025",
     description: "Recognized for innovative research in AI-powered video generation.",
