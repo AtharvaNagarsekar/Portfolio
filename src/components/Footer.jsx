@@ -4,21 +4,18 @@ export const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // This makes the scroll smooth
+      behavior: "smooth", 
     });
   };
 
   return (
     <footer className="py-8 px-4 relative bg-card/50 border-t border-primary/10">
       <div className="container mx-auto max-w-5xl flex flex-col md:flex-row justify-between items-center gap-6">
-        {/* Left Side: Copyright and Thematic Line */}
         <div className="text-center md:text-left">
           <p className="text-sm font-medium">
             &copy; 2025 Atharva Nagarsekar. All Rights Reserved.
           </p>
         </div>
-
-        {/* Right Side: Social Links and Back to Top Button */}
         <div className="flex items-center gap-8">
           <button
             onClick={scrollToTop}
